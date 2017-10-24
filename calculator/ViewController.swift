@@ -46,6 +46,16 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func onClearPressed(sender: AnyObject){
+        result = ""
+        leftValStr = ""
+        rightValStr = ""
+        runningNumber = ""
+        currentOperation = Operation.Empty
+        
+        outputLbl.text = "0"
+    }
+    
     @IBAction func numberPressed(sender: UIButton){
         playSound()
         
